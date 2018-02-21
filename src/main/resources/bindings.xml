@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings
+    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+    xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ci="http://jaxb.dev.java.net/plugin/code-injector"
+    jaxb:version="2.1">
+  <jaxb:globalBindings>
+    <!-- We want the generated Java code to use LocalDateTime objects for xs:dateTime, instead of XMLGregorianCalendar objects -->
+    <!-- @todo For Java 8 use name="java.time.LocalDateTime" -->
+    <jaxb:javaType name="org.joda.time.LocalDateTime" xmlType="xs:dateTime"
+                   parseMethod="se.mdh.driftavbrott.adapter.LocalDateTimeAdapter.parseLocalDateTime"
+                   printMethod="se.mdh.driftavbrott.adapter.LocalDateTimeAdapter.printLocalDateTime"/>
+    <xjc:serializable uid="-1"/>
+    <xjc:simple/>
+  </jaxb:globalBindings>
+
+  <jaxb:bindings schemaLocation="se.mdh.modell-driftavbrott-1.0.0.xsd" node="/xs:schema/xs:complexType[@name='driftavbrottType']">
+    <!-- Convenience method for getting the meddelande, based on the language code -->
+    <ci:code><![CDATA[
+    public String getMeddelande(final String sprakkod) {
+        if("sv".equalsIgnoreCase(sprakkod)) {
+            return getMeddelandeSv();
+        }
+        else {
+            return getMeddelandeEn();
+        }
+    }
+]]></ci:code>
+  </jaxb:bindings>
+</jaxb:bindings>
