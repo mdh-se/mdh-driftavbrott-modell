@@ -1,5 +1,10 @@
 # mdh-driftavbrott-modell
 
+Den kanoniska modellen för ett driftavbrott. Produkten genererar även Java-kod
+för modellen.
+
+## Modellen
+
 Fält          | Beskrivning
 ------------- | -------------
 kanal         | Nyckeln för den kanal som har ett driftavbrott, t.ex. "ladok.uppgradering"
