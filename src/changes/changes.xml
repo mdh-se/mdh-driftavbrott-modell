@@ -7,6 +7,7 @@
     <release version="1.3.0" date="2018-MM-DD">
       <action>Uppgradera till mdh-parent:30.</action>
       <action>Ta bort projektberoendet på krasa-jaxb-tools, men det finns kvar som ett pluginberoende.</action>
+      <action>Lägg till ett beroende på en implementation av jaxb, om vi använder Java 11+.</action>
     </release>
     <release version="1.2.0" date="2018-03-06">
       <action>Uppgradera till mdh-parent:26.</action>

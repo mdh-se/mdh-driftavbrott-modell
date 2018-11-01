@@ -38,7 +38,6 @@
     <dependency>
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
-      <version>${mdh.jaxb-api.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -130,4 +129,21 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>java-11</id>
+      <!-- For plugins that require at least Java 11 to run, or are required to build with Java 11 -->
+      <activation>
+        <jdk>[1.11,)</jdk>
+      </activation>
+      <dependencies>
+        <!-- Do NOT use com.sun.xml.bind:jaxb-impl! -->
+        <dependency>
+          <groupId>org.glassfish.jaxb</groupId>
+          <artifactId>jaxb-runtime</artifactId>
+        </dependency>
+      </dependencies>
+    </profile>
+  </profiles>
 </project>
