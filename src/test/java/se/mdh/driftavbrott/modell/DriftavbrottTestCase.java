@@ -1,9 +1,9 @@
 package se.mdh.driftavbrott.modell;
 
+import java.time.LocalDateTime;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import java.time.LocalDateTime;
 import org.junit.Test;
 
 /**

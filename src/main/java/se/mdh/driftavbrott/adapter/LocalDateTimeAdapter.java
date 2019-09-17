@@ -1,9 +1,9 @@
 package se.mdh.driftavbrott.adapter;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 /**
  * A class that is used by JAXB when it converts an XML date into a Java type.
