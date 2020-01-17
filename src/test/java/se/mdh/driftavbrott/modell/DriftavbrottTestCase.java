@@ -1,7 +1,6 @@
 package se.mdh.driftavbrott.modell;
 
 import java.time.LocalDateTime;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Test;
@@ -17,7 +16,6 @@ public class DriftavbrottTestCase {
 
   @Test
   public void testToString() {
-    ToStringStyle style = ToStringStyle.SHORT_PREFIX_STYLE;
     Driftavbrott driftavbrott = new Driftavbrott();
     driftavbrott.setKanal("ladok.uppgradering");
     driftavbrott.setMeddelandeEn("Ladok is being upgraded");
