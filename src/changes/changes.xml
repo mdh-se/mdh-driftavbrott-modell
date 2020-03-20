@@ -4,6 +4,9 @@
     <title>Ändringar</title>
   </properties>
   <body>
+    <release version="1.4.1" date="2020-MM-DD">
+      <action>Uppgradera till mdh-parent:35.</action>
+    </release>
     <release version="1.4.0" date="2019-01-17">
       <action issue="DRIFTAVBROTT-8">Migrera från Joda-Time till Java 8 time API.</action>
       <action>Uppgradera till mdh-parent:32.</action>
