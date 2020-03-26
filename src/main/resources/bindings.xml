@@ -7,7 +7,6 @@
     jaxb:version="2.1">
   <jaxb:globalBindings>
     <!-- We want the generated Java code to use LocalDateTime objects for xs:dateTime, instead of XMLGregorianCalendar objects -->
-    <!-- @todo For Java 8 use name="java.time.LocalDateTime" -->
     <jaxb:javaType name="java.time.LocalDateTime" xmlType="xs:dateTime"
                    parseMethod="se.mdh.driftavbrott.adapter.LocalDateTimeAdapter.parseLocalDateTime"
                    printMethod="se.mdh.driftavbrott.adapter.LocalDateTimeAdapter.printLocalDateTime"/>
