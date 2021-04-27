@@ -5,7 +5,7 @@
   <parent>
     <groupId>se.mdh</groupId>
     <artifactId>mdh-parent</artifactId>
-    <version>36</version>
+    <version>37-SNAPSHOT</version>
     <relativePath>../mdh-parent/pom.xml</relativePath>
   </parent>
 
@@ -78,43 +78,11 @@
             </goals>
           </execution>
         </executions>
-        <dependencies>
-          <!-- Generates JSR-303 Bean Validation Annotations -->
-          <dependency>
-            <groupId>com.github.krasa</groupId>
-            <artifactId>krasa-jaxb-tools</artifactId>
-            <version>1.5</version>
-          </dependency>
-          <!-- Getters with default values if given in schema -->
-          <dependency>
-            <groupId>org.apache.cxf.xjcplugins</groupId>
-            <artifactId>cxf-xjc-dv</artifactId>
-            <version>${mdh.cxf-xjc.version}</version>
-          </dependency>
-          <!-- Insert toString method for DTOs -->
-          <dependency>
-            <groupId>org.apache.cxf.xjcplugins</groupId>
-            <artifactId>cxf-xjc-ts</artifactId>
-            <version>${mdh.cxf-xjc.version}</version>
-          </dependency>
-        </dependencies>
         <configuration>
           <xsdOptions>
             <xsdOption>
-              <xsdDir>${project.basedir}/src/main/resources</xsdDir>
               <packagename>se.mdh.driftavbrott.modell</packagename>
-              <bindingFile>${project.basedir}/src/main/resources/bindings.xml</bindingFile>
-              <extension>true</extension>
-              <extensionArgs>
-                <!-- Använd rätt encoding -->
-                <extensionArg>-encoding</extensionArg>
-                <extensionArg>${project.build.sourceEncoding}</extensionArg>
-                <!-- Ta inte med header som innehåller datum - lättare att diffa -->
-                <extensionArg>-no-header</extensionArg>
-                <!-- JSR-303 Bean Validation Annotations -->
-                <extensionArg>-XJsr303Annotations</extensionArg>
-                <!-- Insert toString() method -->
-                <extensionArg>-Xts:style:org.apache.commons.lang3.builder.ToStringStyle.SHORT_PREFIX_STYLE</extensionArg>
+              <extensionArgs combine.children="append">
                 <!-- Inject code -->
                 <extensionArg>-Xinject-code</extensionArg>
               </extensionArgs>

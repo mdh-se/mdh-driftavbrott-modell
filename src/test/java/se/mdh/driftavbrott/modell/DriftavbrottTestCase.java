@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Tester för <code>Driftavbrott</code>.
+ * Tester fÃ¶r <code>Driftavbrott</code>.
  *
  * @author Dennis Lundberg
  * @version $Id: DriftavbrottTestCase.java 49037 2018-02-01 13:37:29Z dlg01 $
@@ -19,7 +19,7 @@ public class DriftavbrottTestCase {
   private static final String MEDDELANDE_SV = "Ladok uppgraderas";
 
   /**
-   * Säkerställ att vår convenience-metod finns med och fungerar
+   * SÃ¤kerstÃ¤ll att vÃ¥r convenience-metod finns med och fungerar
    */
   @Test
   public void testGetMeddelande() {
