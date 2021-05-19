@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jaxb:bindings
-    xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
-    xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:ci="http://jaxb.dev.java.net/plugin/code-injector"
-    jaxb:version="2.1">
-  <jaxb:globalBindings>
-    <!-- We want the generated Java code to use LocalDateTime objects for xs:dateTime, instead of XMLGregorianCalendar objects -->
-    <jaxb:javaType name="java.time.LocalDateTime" xmlType="xs:dateTime"
-                   parseMethod="se.mdh.driftavbrott.adapter.LocalDateTimeAdapter.parseLocalDateTime"
-                   printMethod="se.mdh.driftavbrott.adapter.LocalDateTimeAdapter.printLocalDateTime"/>
-    <xjc:serializable uid="-1"/>
+<jaxb:bindings jaxb:extensionBindingPrefixes="xjc"
+               jaxb:version="2.1"
+               xmlns:ci="http://jaxb.dev.java.net/plugin/code-injector"
+               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <jaxb:globalBindings fixedAttributeAsConstantProperty="true"
+                       generateElementProperty="false">
+    <jaxb:serializable uid="1"/>
+    <!-- Den genererade Java-koden ska använda LocalDate-objekt för xs:date -->
+    <xjc:javaType adapter="se.mdh.jaxb.LocalDateAdapter"
+                  name="java.time.LocalDate" xmlType="xs:date"/>
+    <!-- Den genererade Java-koden ska använda LocalDateTime-objekt för xs:dateTime -->
+    <xjc:javaType adapter="se.mdh.jaxb.LocalDateTimeAdapter"
+                  name="java.time.LocalDateTime" xmlType="xs:dateTime"/>
+    <!-- Eliminera JAXBElement så mycket som möjligt -->
     <xjc:simple/>
   </jaxb:globalBindings>
 

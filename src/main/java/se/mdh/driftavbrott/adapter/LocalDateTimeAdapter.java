@@ -13,6 +13,7 @@ import org.apache.commons.logging.LogFactory;
  * <a href="https://jaxb.java.net/guide/Using_different_datatypes.html">https://jaxb.java.net/guide/Using_different_datatypes.html</a>
  *
  * @author Dennis Lundberg
+ * @deprecated Använd se.mdh.jaxb.LocalDateTimeAdapter istället
  */
 public class LocalDateTimeAdapter {
   private static final Log log = LogFactory.getLog(LocalDateTimeAdapter.class);
