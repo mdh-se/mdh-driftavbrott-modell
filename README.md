@@ -1,17 +1,17 @@
 # mdh-driftavbrott-modell
 
-Den kanoniska modellen för ett driftavbrott. Produkten genererar även Java-kod
-för modellen.
+Den kanoniska modellen fÃ¶r ett driftavbrott. Produkten genererar Ã¤ven Java-kod
+fÃ¶r modellen.
 
 ## Modellen
 
-Fält          | Beskrivning
+FÃ¤lt          | Beskrivning
 ------------- | -------------
-kanal         | Nyckeln för den kanal som har ett driftavbrott, t.ex. "ladok.uppgradering"
-start         | Tidpunkten på ISO-format när driftavbrottet startade, t.ex. 2017-09-28T08:00:00.000
-slut          | Tidpunkten på ISO-format när driftavbrottet slutar, t.ex. 2017-09-28T11:00:00.000
-niva          | Är alltid ERROR i nuvarande implementation, men modellen har stöd även för WARN och INFO
-meddelande_sv | Ett felmeddelande på svenska. Denna är tom i nuvarande implementation.
-meddelande_en | Ett felmeddelande på engelska. Denna är tom i nuvarande implementation.
+kanal         | Nyckeln fÃ¶r den kanal som har ett driftavbrott, t.ex. "ladok.uppgradering"
+start         | Tidpunkten pÃ¥ ISO-format nÃ¤r driftavbrottet startade, t.ex. 2017-09-28T08:00:00.000
+slut          | Tidpunkten pÃ¥ ISO-format nÃ¤r driftavbrottet slutar, t.ex. 2017-09-28T11:00:00.000
+niva          | Ã„r alltid ERROR i nuvarande implementation, men modellen har stÃ¶d Ã¤ven fÃ¶r WARN och INFO
+meddelande_sv | Ett felmeddelande pÃ¥ svenska. Denna Ã¤r tom i nuvarande implementation.
+meddelande_en | Ett felmeddelande pÃ¥ engelska. Denna Ã¤r tom i nuvarande implementation.
 
-Modellen är publicerad på denna URL: http://www.mdh.se/xsd/se.mdh.modell-driftavbrott-1.0.0.xsd
+Modellen Ã¤r publicerad pÃ¥ denna URL: http://www.mdh.se/xsd/se.mdh.modell-driftavbrott-1.0.0.xsd
