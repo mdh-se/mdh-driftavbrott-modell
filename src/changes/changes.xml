@@ -4,9 +4,10 @@
     <title>Ändringar</title>
   </properties>
   <body>
-    <release version="1.5.0" date="2021-MM-DD">
+    <release version="1.5.0" date="2022-MM-DD">
       <action>Uppgradera till mdh-parent:37.</action>
       <action>Lägg till beroende på mdh-jaxb.</action>
+      <action>Lägg till en Jenkinsfile.</action>
     </release>
     <release version="1.4.1" date="2020-03-27">
       <action>Uppgradera till mdh-parent:36.</action>
