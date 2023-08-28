@@ -9,7 +9,7 @@
       <action>Lägg till beroende på mdh-jaxb.</action>
       <action>Lägg till en Jenkinsfile.</action>
       <action>Konvertera källkoden till UTF-8 encoding.</action>
-      <action>Uppdatera beroende till commons-lang3:3.12 och junit:4.13.2.</action>
+      <action>Uppdatera beroenden till commons-lang3:3.12, junit:4.13.2 och mdh-jaxb:1.2.1.</action>
     </release>
     <release version="1.4.1" date="2020-03-27">
       <action>Uppgradera till mdh-parent:36.</action>
