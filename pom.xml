@@ -5,7 +5,7 @@
   <parent>
     <groupId>se.mdh</groupId>
     <artifactId>mdh-parent</artifactId>
-    <version>48</version>
+    <version>53-SNAPSHOT</version>
     <relativePath>../mdh-parent/pom.xml</relativePath>
   </parent>
 
@@ -28,7 +28,6 @@
     <dependency>
       <groupId>commons-logging</groupId>
       <artifactId>commons-logging</artifactId>
-      <version>1.2</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
@@ -43,13 +42,11 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>3.9</version>
     </dependency>
     <dependency>
       <groupId>se.mdh.jaxb</groupId>

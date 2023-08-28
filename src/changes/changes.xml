@@ -4,12 +4,12 @@
     <title>Ändringar</title>
   </properties>
   <body>
-    <release version="1.5.0" date="2022-MM-DD">
-      <action>Uppgradera till mdh-parent:37.</action>
+    <release version="1.5.0" date="2023-MM-DD">
+      <action>Uppgradera till mdh-parent:53.</action>
       <action>Lägg till beroende på mdh-jaxb.</action>
       <action>Lägg till en Jenkinsfile.</action>
       <action>Konvertera källkoden till UTF-8 encoding.</action>
-      <action>Uppdatera beroende till junit:4.13.1.</action>
+      <action>Uppdatera beroende till commons-lang3:3.12 och junit:4.13.2.</action>
     </release>
     <release version="1.4.1" date="2020-03-27">
       <action>Uppgradera till mdh-parent:36.</action>
