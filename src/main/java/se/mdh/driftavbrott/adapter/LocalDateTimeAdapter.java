@@ -15,6 +15,7 @@ import org.apache.commons.logging.LogFactory;
  * @author Dennis Lundberg
  * @deprecated Använd se.mdh.jaxb.LocalDateTimeAdapter istället
  */
+@Deprecated
 public class LocalDateTimeAdapter {
   private static final Log log = LogFactory.getLog(LocalDateTimeAdapter.class);
   static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
