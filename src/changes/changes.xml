@@ -4,6 +4,10 @@
     <title>Ändringar</title>
   </properties>
   <body>
+    <release version="1.5.1" date="2023-11-02">
+      <action>Uppgradera till mdh-parent:56.</action>
+      <action>Ändra så att javax.validation:validation-api har scope=compile (default), då den inte ingår i Java 8.</action>
+    </release>
     <release version="1.5.0" date="2023-08-28">
       <action>Uppgradera till mdh-parent:53.</action>
       <action>Lägg till beroende på mdh-jaxb.</action>
