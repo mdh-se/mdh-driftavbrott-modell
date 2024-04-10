@@ -5,13 +5,13 @@
   <parent>
     <groupId>se.mdh</groupId>
     <artifactId>mdh-parent</artifactId>
-    <version>56</version>
+    <version>60</version>
     <relativePath>../mdh-parent/pom.xml</relativePath>
   </parent>
 
   <groupId>se.mdh.driftavbrott</groupId>
   <artifactId>mdh-driftavbrott-modell</artifactId>
-  <version>1.5.2-SNAPSHOT</version>
+  <version>1.6.0-SNAPSHOT</version>
 
   <name>${project.groupId}:${project.artifactId}</name>
   <description>En modell för driftavbrott.</description>
@@ -28,15 +28,15 @@
     <dependency>
       <groupId>commons-logging</groupId>
       <artifactId>commons-logging</artifactId>
+      <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>javax.validation</groupId>
-      <artifactId>validation-api</artifactId>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
     </dependency>
     <dependency>
-      <groupId>javax.xml.bind</groupId>
-      <artifactId>jaxb-api</artifactId>
-      <scope>provided</scope>
+      <groupId>jakarta.xml.bind</groupId>
+      <artifactId>jakarta.xml.bind-api</artifactId>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -47,10 +47,16 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
     </dependency>
+    <!-- Implementation javax.xml.bind -->
+    <dependency>
+      <groupId>org.glassfish.jaxb</groupId>
+      <artifactId>jaxb-runtime</artifactId>
+      <scope>runtime</scope>
+    </dependency>
     <dependency>
       <groupId>se.mdh.jaxb</groupId>
       <artifactId>mdh-jaxb</artifactId>
-      <version>1.2.1</version>
+      <version>1.3.0</version>
     </dependency>
   </dependencies>
 
