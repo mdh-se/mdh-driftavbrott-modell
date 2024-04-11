@@ -4,6 +4,9 @@
     <title>Ändringar</title>
   </properties>
   <body>
+    <release version="1.6.1" date="2024-04-12">
+      <action>Ta bort profilen java-11.</action>
+    </release>
     <release version="1.6.0" date="2024-04-10">
       <action issue="JAVA-68">Ersätt javax-dependencies med motsvarande jakarta-dependencies.</action>
       <action>Uppgradera till mdh-parent:60.</action>
