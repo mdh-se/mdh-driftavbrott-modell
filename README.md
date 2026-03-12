@@ -1,4 +1,4 @@
-# mdu-driftavbrott-modell
+# mdh-driftavbrott-modell
 
 Den kanoniska modellen för ett driftavbrott. Produkten genererar även Java-kod
 för modellen.
